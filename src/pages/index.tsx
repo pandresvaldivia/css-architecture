@@ -10,9 +10,10 @@ const Home = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="bg-blue-50">
+			<main>
 				<div>
-					<p className="text-blue-300 text-desktop-h1">This is the first project</p>
+					<h1 className="font-manrope">jajjaj</h1>
+					<p>jajjaj</p>
 				</div>
 			</main>
 		</>
