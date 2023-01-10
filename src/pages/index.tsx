@@ -1,5 +1,9 @@
 import Head from 'next/head';
 
+import ButtonAnchor from '../common/atoms/ButtonAnchor';
+import ButtonBase from '../common/atoms/ButtonBase';
+import ButtonLink from '../common/atoms/ButtonLink';
+
 const Home = () => {
 	return (
 		<>
@@ -10,9 +14,14 @@ const Home = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="bg-blue-50">
-				<div>
-					<p className="text-blue-300 text-desktop-h1">This is the first project</p>
+			<main className="bg-blue-50 p-4">
+				<p className="text-blue-500 text-desktop-h1 mb-2">Button Base</p>
+				<ButtonAnchor link="#" text="Button" />
+				<p className="text-blue-500 text-desktop-h1 mb-2">Button variants</p>
+				<div className="flex gap-1.5">
+					<ButtonAnchor link="#" text="Button Anchor" />
+					<ButtonLink link="#" text="Button Link" />
+					<ButtonBase onClick={() => console.warn('Button Base')} text="Button Base" />
 				</div>
 			</main>
 		</>
