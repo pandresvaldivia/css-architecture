@@ -1,4 +1,4 @@
 module.exports = {
-	sans: ['manrope', 'sans-serif'],
+	sans: ['Manrope', 'sans-serif'],
 	inter: ['Inter', 'sans-serif'],
 };
