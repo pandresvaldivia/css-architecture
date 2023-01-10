@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import styles from '../styles/Home.module.scss';
+import styles from '../../styles/Home.module.scss';
 
 const Home = () => {
 	return (
@@ -12,9 +12,9 @@ const Home = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className={styles.main}>
+			<main className="bg-ed-blue-700">
 				<div>
-					<p className="text-red-500 underline">This is the first project</p>
+					<p className="text-ed-blue-50">This is the first project</p>
 				</div>
 			</main>
 		</>
