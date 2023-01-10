@@ -1,5 +1,9 @@
 import Head from 'next/head';
 
+import ButtonAnchor from '../common/atoms/ButtonAnchor';
+import ButtonBase from '../common/atoms/ButtonBase';
+import ButtonLink from '../common/atoms/ButtonLink';
+import Banner from '../modules/home/Banner';
 import LearnSection from '../modules/home/LearnSection';
 
 const Home = () => {
@@ -13,6 +17,7 @@ const Home = () => {
 			</Head>
 
 			<main>
+				<Banner />
 				<LearnSection />
 			</main>
 		</>

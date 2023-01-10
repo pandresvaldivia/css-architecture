@@ -1,0 +1,26 @@
+.root{
+  background: linear-gradient(280deg,#077eb0 -16%,#08587d 8%,#073750 32%,#07283c 40%,#0a1f2e 90%)
+}
+
+.man {
+  grid-column-start: 2;
+}
+
+.go {
+  width: 28%;
+  bottom: 33%;
+  mix-blend-mode: screen;
+}
+
+.circles {
+  height: 88%;
+  aspect-ratio: 1/1;
+
+  img {
+    @apply w-full h-full left-0;
+
+    &:not(.logo) {
+      mix-blend-mode: screen;
+    }
+  }
+}
