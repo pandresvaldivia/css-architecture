@@ -1,5 +1,9 @@
 @layer components {
   .button {
-    @apply px-4 py-2 rounded font-bold text-white bg-blue-600 hover:bg-blue-500 transition-colors inline-block;
+    @apply px-4 py-2 rounded font-bold text-white bg-blue-500 hover:bg-blue-600 transition-colors inline-block text-small text-normal;
+  }
+
+  .section {
+    @apply py-14 lg:py-32
   }
 }

@@ -1,0 +1,11 @@
+.root {
+  &:hover {
+    .image {
+      @apply scale-110;
+    }
+  }
+}
+
+.image {
+  @apply transition-transform duration-300 ease-in-out;
+}

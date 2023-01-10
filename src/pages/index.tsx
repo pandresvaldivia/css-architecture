@@ -4,6 +4,7 @@ import ButtonAnchor from '../common/atoms/ButtonAnchor';
 import ButtonBase from '../common/atoms/ButtonBase';
 import ButtonLink from '../common/atoms/ButtonLink';
 import Banner from '../modules/home/Banner';
+import LearnSection from '../modules/home/LearnSection';
 
 const Home = () => {
 	return (
@@ -15,8 +16,9 @@ const Home = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="">
+			<main>
 				<Banner />
+				<LearnSection />
 			</main>
 		</>
 	);
