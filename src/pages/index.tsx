@@ -1,7 +1,5 @@
 import Head from 'next/head';
 
-import styles from '../../styles/Home.module.scss';
-
 const Home = () => {
 	return (
 		<>
@@ -12,9 +10,9 @@ const Home = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="bg-ed-blue-700">
+			<main className="bg-blue-50">
 				<div>
-					<p className="text-ed-blue-50">This is the first project</p>
+					<p className="text-blue-300 text-desktop-h1">This is the first project</p>
 				</div>
 			</main>
 		</>

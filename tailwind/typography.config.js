@@ -1,0 +1,15 @@
+module.exports = {
+	tiny: ['10px', '1.8em'],
+	smaller: ['12px', '1.8em'],
+	small: ['14px', '1.8em'],
+	normal: ['16px', '1.8em'],
+	lg: ['17px', '1.5em'],
+	xl: ['21px', '1.5em'],
+	'2xl': ['22px', '1.5em'],
+	'3xl': ['26px', '1.5em'],
+	'4xl': ['32px', '1.4em'],
+	bigger: ['21px', '1.8em'],
+	'desktop-h1': ['32px', '1.4em'],
+	'desktop-h2': ['26px', '1.4em'],
+	'desktop-h4': ['17px', '1.5em'],
+};

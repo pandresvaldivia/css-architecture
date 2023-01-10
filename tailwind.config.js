@@ -1,69 +1,14 @@
+const colors = require('./tailwind/colors.config');
+const typography = require('./tailwind/typography.config');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{ts,tsx}'],
 	theme: {
-		colors: {
-			'ed-blue': {
-				50: 'var(--blue-50)',
-				100: '#E1F1FD',
-				200: '#A6D6F9',
-				300: '#88C8F7',
-				400: '#61B7F4',
-				500: '#1292EE',
-				600: '#0F80D1',
-				700: 'var(--blue-700)',
-				800: '#084977',
-				900: '#192E3D',
-			},
-			'ed-green': {
-				50: '#F2FCFA',
-				100: '#DEF7F0',
-				200: '#B3EFDE',
-				300: '#89E6CC',
-				400: '#5AE2BB',
-				500: '#09D69C',
-				600: '#12A27C',
-				700: '#0D795A',
-				800: '#09513E',
-				900: '#06372C',
-			},
-			'ed-yellow': {
-				50: '#FEFBF4',
-				100: '#FFF0D1',
-				200: '#FFE3A5',
-				300: '#FCD683',
-				400: '#FFCA59',
-				500: '#FFC240',
-				600: '#DA950B',
-				700: '#B07909',
-				800: '#6F4C06',
-				900: '#3D2902',
-			},
-			'ed-red': {
-				50: '#FEF2F3',
-				100: '#FBD7D9',
-				200: '#F6AEB3',
-				300: '#F2868D',
-				400: '#ED5D67',
-				500: '#E93541',
-				600: '#CE1723',
-				700: '#9A111A',
-				800: '#670B11',
-				900: '#370609',
-			},
-			'ed-grey': {
-				100: '#fbfdfe',
-				200: '#f9fafb',
-				300: '#ecf0f3',
-				400: '#b7c1c8',
-				500: '#8e9ba4',
-				600: '#687782',
-				700: '#273b49',
-				800: '#28353e',
-				900: '#192229',
-			},
+		colors: colors,
+		extend: {
+			fontSize: typography,
 		},
-		extend: {},
 	},
 	plugins: [],
 };
