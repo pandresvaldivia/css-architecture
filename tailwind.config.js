@@ -1,5 +1,6 @@
 const colors = require('./tailwind/colors.config');
 const typography = require('./tailwind/typography.config');
+const fonts = require('./tailwind/fonts.config');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -9,6 +10,7 @@ module.exports = {
 		extend: {
 			fontSize: typography,
 		},
+		fontFamily: fonts,
 	},
 	plugins: [],
 };
