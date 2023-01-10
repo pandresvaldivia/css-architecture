@@ -1,16 +1,23 @@
+import { useState } from 'react';
 import { useMedia } from 'react-use';
 
-import ButtonAnchor from '../../common/atoms/ButtonAnchor';
+import ButtonBase from '../../common/atoms/ButtonBase';
 
 import LearnCard from './LearnCard';
 import LearnMainCard from './LearnMainCard';
 
 const LearnSection = () => {
+	const [darkMode, setDarkMode] = useState(false);
 	const fromMD = useMedia('(min-width: 640px)');
+
+	const toggleDarkMode = () => {
+		document.querySelector('body')?.classList.toggle('dark');
+		setDarkMode(!darkMode);
+	};
 
 	return (
 		<section className="section flex flex-col items-center bg-white px-4">
-			<h2 className="text-desktop-h1 font-bold font-inter text-center mb-4">
+			<h2 className="text-desktop-h1 font-bold font-inter text-center mb-4 text-grey-700">
 				¿Qué puedes aprender <span className="text-blue-500">en EDteam?</span>
 			</h2>
 			<p className="text-center text-grey-600 mb-12">
@@ -54,7 +61,7 @@ const LearnSection = () => {
 					text="¡Impulsa a tus hijos a construir un futuro exitoso desde hoy con su primer curso de programación!"
 				/>
 			</div>
-			<ButtonAnchor link="https://app.ed.team/" text="Comienza a estudiar gratis" />
+			<ButtonBase onClick={toggleDarkMode} text="Comienza a estudiar gratis" />
 		</section>
 	);
 };

@@ -9,7 +9,7 @@ const LearnCard = ({ image, link, title, text }: LearnCardProps) => {
 			href={link}
 			className={classNames(
 				learnCardStyles.root,
-				'text-center px-3 pt-4 pb-8 rounded hover:bg-grey-200 transition-colors max-w-sm'
+				'text-center px-3 pt-4 pb-8 rounded-lg hover:bg-grey-200 transition-colors max-w-sm'
 			)}
 		>
 			<article>
@@ -24,10 +24,7 @@ const LearnCard = ({ image, link, title, text }: LearnCardProps) => {
 				</div>
 				<div>
 					<h3 className="text-xl font-semibold text-grey-700 mb-2">{title}</h3>
-					<p className="text-grey-600 text-small">
-						¡Transforma tus ideas en proyectos que la gente ame! Encuentra cursos de animación,
-						diseño gráfico y dibujo.
-					</p>
+					<p className="text-grey-600 text-small">{text}</p>
 				</div>
 			</article>
 		</a>

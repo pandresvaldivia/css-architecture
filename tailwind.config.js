@@ -12,5 +12,6 @@ module.exports = {
 		},
 		fontFamily: fonts,
 	},
+	darkMode: 'class',
 	plugins: [],
 };
